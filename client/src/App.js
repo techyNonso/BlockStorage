@@ -57,6 +57,9 @@ class App extends Component {
           });
         }
       } else {
+        this.setState({
+          web3: "",
+        });
         alert("App does not exeist on this network");
       }
     } catch (error) {
